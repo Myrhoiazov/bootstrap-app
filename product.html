@@ -21,7 +21,7 @@
 </head>
 <body>
     <!-- Header -->
-    <header>
+    <header id="header">
         <nav class="navbar navbar-expand-xl bg-white fixed-top">
             <div class="container">
             <a class="navbar-brand text-uppercase logo font-monospace" href="index.html">Kameleon</a>
@@ -546,7 +546,7 @@
                     </div>
                     </div>
                     <div class="control">
-                        <button type="button" class="btn rounded-circle" id="prev"> <span><i class="bi bi-chevron-left icon-prev"></i></button>
+                        <button id="prev"> <span><i class="bi bi-chevron-left icon-prev"></i></button>
                         <button id="next"><span><i class="bi bi-chevron-right icon-prev"></i></span></button>
                     </div>
                 
@@ -634,6 +634,9 @@
         </div>
         </section>
     </main>
+     <!-- Go to top -->
+     <a href="#header" class="btn btn-outline-secondary rounded-circle fs-4 goto-top goto-top--hide" title="Go to top" data-goto-top aria-label="Go to page top"><i class="bi bi-arrow-up"></i></a>
+
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-white text-muted">
         <!-- Section: mobile -->

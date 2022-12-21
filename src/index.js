@@ -2,6 +2,7 @@ var $ = document;
 
 $.addEventListener('DOMContentLoaded', function() {
 
+  // Slider
   const sliderMe = () => {
     let currentPosition = 0,
       sliderItem = document.querySelectorAll('.slider-item'),
@@ -43,6 +44,24 @@ $.addEventListener('DOMContentLoaded', function() {
   window.addEventListener("resize", sliderMe)
 
 });
+
+
+  // GoTo-Top
+  const btnGoTop = $.querySelector('.goto-top')
+
+  $.onscroll = function () {
+    if (
+      $.body.scrollTop > 100 ||
+      $.documentElement.scrollTop > 100
+    ) {
+      btnGoTop.classList.remove('goto-top--hide');
+    } else {
+      btnGoTop.classList.add('goto-top--hide');
+    }
+  };
+
+
+
 
 
 
