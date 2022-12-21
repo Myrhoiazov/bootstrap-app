@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kameleon App</title>
+
+    <!-- Bootstrap -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+    crossorigin="anonymous"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-xl bg-white fixed-top">
+            <div class="container">
+            <a class="navbar-brand text-uppercase logo font-monospace" href="index.html">Kameleon</a>
+            <div class="nav-search ms-auto d-xl-none">
+                <button type="button" class="btn">
+                <i class="bi bi-search"></i>
+                </button>
+                <button type="button" class="btn"><i class="bi bi-bag"></i></button>
+            </div>
+            <button
+                class="navbar-toggler border-0"
+                type="button"
+                aria-label="Open"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+                class="offcanvas offcanvas-end"
+                tabindex="-1"
+                id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header ">
+                <h5 class="offcanvas-title ms-auto m-2 text-secondary" id="offcanvasNavbarLabel">
+                    Sluit
+                </h5>
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active-link" aria-current="page" href="index.html"
+                            >Nieuw</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sale</a>
+                    </li>
+                    <li class="nav-item">
+            <a class="nav-link" href="#">Kleding</a>
+                    </li>
+                    <li class="nav-item">
+            <a class="nav-link" href="#">Accesoires</a>
+                    </li>
+                    <li class="nav-item">
+            <a class="nav-link" href="#">Schoenen</a>
+                    </li>
+                    <li class="nav-item">
+            <a class="nav-link" href="#">Merken</a>
+                    </li>
+                    <li class="nav-item">
+            <a class="nav-link" href="#">Winkel</a>
+                    </li>
+                    <li class="nav-item">
+            <a class="nav-link" href="#">Lookbook</a>
+                    </li>
+                    </ul>
+                    <ul class="navbar-nav m-auto mt-5 mb-2 mb-xl-0 d-lg-none ">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html"
+                                >Merken</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Winkels</a>
+                        </li>
+                        <li class="nav-item">
+                <a class="nav-link" href="#">Duurzaam</a>
+                        </li>
+                        <li class="nav-item">
+                <a class="nav-link" href="#">Duurzaam</a>
+                        </li>
+                        <li class="nav-item">
+                <a class="nav-link mb-3" href="#">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link"><button
+                                type="button"
+                                class="btn rounded-pill btn-outline-secondary">
+                                Inloggen
+                            </button></a>
+                        </li>
+                        </ul>
+                        <button type="button" class="btn d-none d-xl-inline-block">
+                            <i class="bi bi-search"></i>
+                          </button>
+                          <button type="button" class="btn d-none d-xl-inline-block"><i class="bi bi-bag"></i></button>
+                          <button type="button" class="btn d-none d-xl-inline-block">
+                            <i class="bi bi-person"></i>
+                          </button>
+                </div>
+                
+              </div>
+            </div>
+          </nav>
+    </header>
+    <!-- Main -->
+    <main>
+        <!-- Hero-section -->
+        <section class="hero pt-0">
+        <div class="container hero-wrapper">
+            <img
+            src="./src/image/hero-mb.jpg"
+            class="d-md-none img-fluid"
+            width="100%"
+            alt="banner"
+            />
+            <img
+            src="./src/image/hero-desk.jpg"
+            class="d-none d-md-block img-fluid"
+            width="100%"
+            alt="banner"
+            />
+            <div class="hero-body">
+            <h5 class="card-title hero-title">Summer is coming</h5>
+            <p class="card-text hero-text">
+                Deze winter duurde wel extreem lang
+            </p>
+            <button
+                type="button"
+                class="btn rounded-pill btn-secondary text-white">
+                S/S 22
+            </button>
+            </div>
+        </div>
+        </section>
+        <!-- Slider section -->
+        <section class="shop-carousels">
+            <div class="container">
+                <h2 class="text-left products-title">Shop deze look</h2>
+                <div class="slider">
+                    <div class="slider-inner gap-1">
+                    <div class="slider-item">
+                            <div class="card border-0">
+                                <a href="product.html"><img
+                                    src="./src/image/6.webp"
+                                    class="card-img-top border"
+                                    alt="product img"
+                                    /></a>
+                                <div class="pt-3">
+                                <div class="row">
+                                    <div class="d-flex justify-content-between p-price ">
+                                    <h5 class="text-body">Baum und pferdgarten</h5>
+                                    <div class="text-secondary d-flex gap-3">
+                                        <span class="card-price-sale text-decoration-line-through">€ 299,00</span> € 180,00
+                                    </div>
+                                    </div>
+                                </div>
+                                <p class="card-text text-secondary">
+                                    C91724-15E-3W DUNGAREE / MBL MID
+                                </p>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="card border-0">
+                                <a href="product.html"><img
+                                    src="./src/image/8.webp"
+                                    class="card-img-top border"
+                                    alt="product img"
+                                    /></a>
+                                <div class="pt-3">
+                                <div class="row">
+                                    <div class="d-flex justify-content-between p-price">
+                                    <h5 class="text-body">Baum und pferdgarten</h5>
+                                    <div class="text-secondary d-flex gap-3">
+                                        <span class="card-price-sale text-decoration-line-through">€ 299,00</span> € 180,00
+                                    </div>
+                                    </div>
+                                </div>
+                                <p class="card-text text-secondary">
+                                    C91724-15E-3W DUNGAREE / MBL MID
+                                </p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="card border-0">
+                                <img
+                                src="./src/image/9.webp"
+                                class="card-img-top border"
+                                alt="product img"
+                                />
+                                <div class="pt-3">
+                                <div class="row">
+                                    <div class="d-flex justify-content-between p-price">
+                                    <h5 class="text-body">Baum und pferdgarten</h5>
+                                    <div class="text-secondary d-flex gap-3">
+                                        <span class="card-price-sale text-decoration-line-through">€ 299,00</span> € 180,00
+                                    </div>
+                                    </div>
+                                </div>
+                                <p class="card-text text-secondary">
+                                    C91724-15E-3W DUNGAREE / MBL MID
+                                </p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="card border-0">
+                                <img
+                                src="./src/image/6.webp"
+                                class="card-img-top border"
+                                alt="product img"
+                                />
+                                <div class="pt-3">
+                                <div class="row">
+                                    <div class="d-flex justify-content-between p-price">
+                                    <h5 class="text-body">Baum und pferdgarten</h5>
+                                    <div class="text-secondary d-flex gap-3">
+                                        <span class="card-price-sale text-decoration-line-through">€ 299,00</span> € 180,00
+                                    </div>
+                                    </div>
+                                </div>
+                                <p class="card-text text-secondary">
+                                    C91724-15E-3W DUNGAREE / MBL MID
+                                </p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="card border-0">
+                                <img
+                                src="./src/image/8.webp"
+                                class="card-img-top border"
+                                alt="product img"
+                                />
+                                <div class="pt-3">
+                                <div class="row">
+                                    <div class="d-flex justify-content-between p-price">
+                                    <h5 class="text-body">Baum und pferdgarten</h5>
+                                    <div class="text-secondary d-flex gap-3">
+                                        <span class="card-price-sale text-decoration-line-through">€ 299,00</span> € 180,00
+                                    </div>
+                                    </div>
+                                </div>
+                                <p class="card-text text-secondary">
+                                    C91724-15E-3W DUNGAREE / MBL MID
+                                </p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="card border-0">
+                                <img
+                                src="./src/image/9.webp"
+                                class="card-img-top border"
+                                alt="product img"
+                                />
+                                <div class="pt-3">
+                                <div class="row">
+                                    <div class="d-flex justify-content-between p-price">
+                                    <h5 class="text-body">Baum und pferdgarten</h5>
+                                    <div class="text-secondary d-flex gap-3">
+                                        <span class="card-price-sale text-decoration-line-through">€ 299,00</span> € 180,00
+                                    </div>
+                                    </div>
+                                </div>
+                                <p class="card-text text-secondary">
+                                    C91724-15E-3W DUNGAREE / MBL MID
+                                </p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="card border-0">
+                                <img
+                                src="./src/image/6.webp"
+                                class="card-img-top border"
+                                alt="product img"
+                                />
+                                <div class="pt-3">
+                                <div class="row">
+                                    <div class="d-flex justify-content-between p-price">
+                                    <h5 class="text-body">Baum und pferdgarten</h5>
+                                    <div class="text-secondary d-flex gap-3" >
+                                        <span class="card-price-sale text-decoration-line-through">€ 299,00</span> € 180,00
+                                    </div>
+                                    </div>
+                                </div>
+                                <p class="card-text text-secondary">
+                                    C91724-15E-3W DUNGAREE / MBL MID
+                                </p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="card border-0">
+                                <img
+                                src="./src/image/8.webp"
+                                class="card-img-top border"
+                                alt="product img"
+                                />
+                                <div class="pt-3">
+                                <div class="row">
+                                    <div class="d-flex justify-content-between p-price">
+                                    <h5 class="text-body">Baum und pferdgarten</h5>
+                                    <div class="text-secondary d-flex gap-3">
+                                        <span class="card-price-sale text-decoration-line-through">€ 299,00</span> € 180,00
+                                    </div>
+                                    </div>
+                                </div>
+                                <p class="card-text text-secondary">
+                                    C91724-15E-3W DUNGAREE / MBL MID
+                                </p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="card border-0">
+                                <img
+                                src="./src/image/9.webp"
+                                class="card-img-top border"
+                                alt="product img"
+                                />
+                                <div class="pt-3">
+                                <div class="row">
+                                    <div class="d-flex justify-content-between p-price">
+                                    <h5 class="text-body">Baum und pferdgarten</h5>
+                                    <div class="text-secondary d-flex gap-3">
+                                        <span class="card-price-sale text-decoration-line-through">€ 299,00</span> € 180,00
+                                    </div>
+                                    </div>
+                                </div>
+                                <p class="card-text text-secondary">
+                                    C91724-15E-3W DUNGAREE / MBL MID
+                                </p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="card border-0">
+                                <img
+                                src="./src/image/6.webp"
+                                class="card-img-top border"
+                                alt="product img"
+                                />
+                                <div class="pt-3">
+                                <div class="row">
+                                    <div class="d-flex justify-content-between p-price">
+                                    <h5 class="text-body">Baum und pferdgarten</h5>
+                                    <div class="text-secondary d-flex gap-3">
+                                        <span class="card-price-sale text-decoration-line-through">€ 299,00</span> € 180,00
+                                    </div>
+                                    </div>
+                                </div>
+                                <p class="card-text text-secondary">
+                                    C91724-15E-3W DUNGAREE / MBL MID
+                                </p>
+                                </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="control">
+                        <button type="button" class="btn rounded-circle" id="prev"> <span><i class="bi bi-chevron-left icon-prev"></i></button>
+                        <button id="next"><span><i class="bi bi-chevron-right icon-prev"></i></span></button>
+                    </div>
+                
+                </div>
+            </div>
+        </section>
+        <!-- Shop section -->
+        <section class="shop">
+            <div class="container">
+            <h2 class="text-left products-title">
+            Zorg dat je klaar bent voor het seizoen
+            </h2>
+            <div class="row row-cols-1 row-cols-md-2 g-2">
+            <div class="col">
+                <div class="card">
+                <img
+                    src="./src/image/shop-01.jpg"
+                    class="card-img-top border-0"
+                    alt="product img"/>
+                </div>
+                <div class="shop-content">
+                    <h3 class="mb-3 text-white m-2">Broken</h3>
+                    <button
+                    type="button"
+                    class="btn rounded-pill btn-secondary text-white">
+                    Shop</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img
+                    src="./src/image/shop-02.jpg"
+                    class="card-img-top border-0"
+                    alt="product img"/>
+                </div>
+                <div class="shop-content">
+                    <h3 class="mb-3 text-white m-2">Broken</h3>
+                    <button
+                    type="button"
+                    class="btn rounded-pill btn-secondary text-white"
+                    >Shop</button>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- Product section -->
+        <section class="products">
+        <div class="container">
+            <h2 class="text-left products-title">Populaire items</h2>
+            <div class="row row-cols-2 row-cols-md-3 g-2">
+            <div class="col mb-4">
+                <div class="card border-0">
+                    <div class="img-thumb">
+                        <img
+                    src="./src/image/product-img.jpg"
+                    class="card-img-top border"
+                    alt="product img"/>
+                    <span class="label-new d-md-none">Nieuw</span>
+                    </div>
+                    <div class="pt-3 products-popular">
+                        <div class="row">
+                    <div class="d-flex justify-content-between align-items-center products-data">
+                        <h5 class="text-body col-6">Baum und pferdgarten</h5>
+                        <p class="text-secondary d-flex justify-content-between gap-3 col-6">
+                        <span class="card-price-sale text-decoration-line-through text-muted ms-auto">€ 299,00</span> € 180,00
+                        </p>
+                    </div>
+                    </div>
+                    <p class="card-text text-secondary">
+                    C91724-15E-3W DUNGAREE / MBL MID
+                    </p>
+                </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card border-0">
+                    <div class="img-thumb">
+                        <img
+                    src="./src/image/product-img.jpg"
+                    class="card-img-top border"
+                    alt="product img"/>
+                    <span class="label-new d-md-none">Nieuw</span>
+                    </div>
+                    <div class="pt-3 products-popular">
+                        <div class="row">
+                    <div class="d-flex justify-content-between align-items-center products-data">
+                        <h5 class="text-body col-6">Baum und pferdgarten</h5>
+                        <p class="text-secondary d-flex justify-content-between gap-3 col-6">
+                        <span class="card-price-sale text-decoration-line-through text-muted ms-auto">€ 299,00</span> € 180,00
+                        </p>
+                    </div>
+                    </div>
+                    <p class="card-text text-secondary">
+                    C91724-15E-3W DUNGAREE / MBL MID
+                    </p>
+                </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card border-0">
+                    <div class="img-thumb">
+                        <img
+                    src="./src/image/product-img.jpg"
+                    class="card-img-top border"
+                    alt="product img"/>
+                    <span class="label-new d-md-none">Nieuw</span>
+                    </div>
+                    <div class="pt-3 products-popular">
+                        <div class="row">
+                    <div class="d-flex justify-content-between align-items-center products-data">
+                        <h5 class="text-body col-6">Baum und pferdgarten</h5>
+                        <p class="text-secondary d-flex justify-content-between gap-3 col-6">
+                        <span class="card-price-sale text-decoration-line-through text-muted ms-auto">€ 299,00</span> € 180,00
+                        </p>
+                    </div>
+                    </div>
+                    <p class="card-text text-secondary">
+                    C91724-15E-3W DUNGAREE / MBL MID
+                    </p>
+                </div>
+                </div>
+            </div>
+            <div class="col mb-0">
+                <div class="card border-0">
+                    <div class="img-thumb">
+                        <img
+                    src="./src/image/product-img.jpg"
+                    class="card-img-top border"
+                    alt="product img"/>
+                    <span class="label-new d-md-none">Nieuw</span>
+                    </div>
+                    <div class="pt-3 products-popular">
+                        <div class="row">
+                    <div class="d-flex justify-content-between align-items-center products-data">
+                        <h5 class="text-body col-6">Baum und pferdgarten</h5>
+                        <p class="text-secondary d-flex justify-content-between gap-3 col-6">
+                        <span class="card-price-sale text-decoration-line-through text-muted ms-auto">€ 299,00</span> € 180,00
+                        </p>
+                    </div>
+                    </div>
+                    <p class="card-text text-secondary">
+                    C91724-15E-3W DUNGAREE / MBL MID
+                    </p>
+                </div>
+                </div>
+            </div>
+            <div class="col mb-0">
+                <div class="card border-0">
+                    <div class="img-thumb">
+                        <img
+                    src="./src/image/product-img.jpg"
+                    class="card-img-top border"
+                    alt="product img"/>
+                    <span class="label-new d-md-none">Nieuw</span>
+                    </div>
+                    <div class="pt-3 products-popular">
+                        <div class="row">
+                    <div class="d-flex justify-content-between align-items-center products-data">
+                        <h5 class="text-body col-6">Baum und pferdgarten</h5>
+                        <p class="text-secondary d-flex justify-content-between gap-3 col-6">
+                        <span class="card-price-sale text-decoration-line-through text-muted ms-auto">€ 299,00</span> € 180,00
+                        </p>
+                    </div>
+                    </div>
+                    <p class="card-text text-secondary">
+                    C91724-15E-3W DUNGAREE / MBL MID
+                    </p>
+                </div>
+                </div>
+            </div>
+            <div class="col mb-0">
+                <div class="card border-0">
+                    <div class="img-thumb">
+                        <img
+                    src="./src/image/product-img.jpg"
+                    class="card-img-top border"
+                    alt="product img"/>
+                    <span class="label-new d-md-none">Nieuw</span>
+                    </div>
+                    <div class="pt-3 products-popular">
+                        <div class="row">
+                    <div class="d-flex justify-content-between align-items-center products-data">
+                        <h5 class="text-body col-6">Baum und pferdgarten</h5>
+                        <p class="text-secondary d-flex justify-content-between gap-3 col-6">
+                        <span class="card-price-sale text-decoration-line-through text-muted ms-auto">€ 299,00</span> € 180,00
+                        </p>
+                    </div>
+                    </div>
+                    <p class="card-text text-secondary">
+                    C91724-15E-3W DUNGAREE / MBL MID
+                    </p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+        <!-- Instagram section -->
+        <section class="instagram">
+        <div class="container">
+            <h2 class="text-left products-title">Instagram</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-2 instagram-body">
+            <div class="col mb-4">
+                <div class="card">
+                  <img
+                    src="./src/image/insta-01.jpg"
+                    class="card-img-top border-0"
+                    alt="product img"
+                  />
+                </div>
+            </div>
+            <div class="col d-none d-md-block mb-4">
+                <div class="card">
+                  <img
+                    src="./src/image/insta-02.jpg"
+                    class="card-img-top border-0"
+                    alt="product img"
+                  />
+                </div>
+            </div>
+            <div class="col d-none d-md-block mb-4">
+                <div class="card">
+                  <img
+                    src="./src/image/insta-03.jpg"
+                    class="card-img-top border-0"
+                    alt="product img"
+                  />
+                </div>
+            </div>
+            </div>
+            <a type="button" class="btn btn-accent text-white rounded-pill" href="#">
+            <i class="bi bi-instagram"></i> Volg ons op Instagram</a
+            >
+        </div>
+        </section>
+    </div>
+    </main>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-white text-muted">
+        <!-- Section: mobile -->
+        <section >
+            <div class="container">
+                <div class="border-top d-lg-none pt-5">
+                    <a class="navbar-brand text-uppercase text-center mb-4 logo font-monospace fs-5" href="index.html">Kameleon</a>
+                    <div class="mb-4">
+                        <a href="" class="text-default mb-2 text-decoration-none">024 322 6373</a>
+                        <a href="" class="text-default text-decoration-none">info@kameleonnijmegen.nl</a> 
+                    </div >
+                    <div class="d-flex justify-content-center m-2 mb-4 gap-2">
+                        <a href="" class="text-default"><i class="bi bi-instagram "></i></a>
+                        <a href="" class="text-default"><i class="bi bi-whatsapp "></i></a>
+                        <a href="" class="text-default"><i class="bi bi-facebook "></i></a>
+                    </div>
+                    <div class="mb-5">
+                        <a href="" class="fas fa-home me-3 text-default mb-2">Algemene voorwaarden</a>
+                        <a href="" class="fas fa-home me-3 text-default mb-2">Privacy policy</a>
+                        <a href="" class="fas fa-home me-3 text-default">Service</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section: desktop  -->
+        <section class="d-none d-lg-block border-top">
+        <div class="container text-center text-md-start mt-5">
+            <div class="row">
+            <div class=" col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                    Kleding
+                </h6>
+                <p class="mb-1">
+                  <a href="#" class="text-default">Beenmode</a>
+                </p>
+                <p class="mb-1">
+                  <a href="#!" class="text-default">Blazer en jasjes</a>
+                </p>
+                <p class="mb-1">
+                  <a href="#!" class="text-default">Broeken en jumpsuits</a>
+                </p>
+                <p class="mb-1">
+                  <a href="#!" class="text-default">Jassen</a>
+                </p>
+                <p class="mb-1">
+                    <a href="#!" class="text-default">Jeans</a>
+                  </p>
+                  <p class="mb-1">
+                    <a href="#!" class="text-default">Jurken en tunieken</a>
+                  </p>
+                  <p class="mb-1">
+                    <a href="#!" class="text-default">Rokken</a>
+                  </p>
+                  <p class="mb-1">
+                    <a href="#!" class="text-default text-default">Tops en blouses</a>
+                  </p>
+                  <p class="mb-1">
+                    <a href="#!" class="text-default text-default">Truien en vesten</a>
+                  </p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                    Accesoires
+                </h6>
+                <p class="mb-1">
+                  <a href="#!" class="text-default">Brillen</a>
+                </p>
+                <p class="mb-1">
+                  <a href="#!" class="text-default">Care en beauty</a>
+                </p>
+                <p class="mb-1">
+                  <a href="#!" class="text-default">Hoeden en mutsen</a>
+                </p>
+                <p class="mb-1">
+                  <a href="#!" class="text-default">Overige accessoires</a>
+                </p>
+                <p class="mb-1">
+                    <a href="#!" class="text-default">Riemen</a>
+                  </p>
+                  <p class="mb-1">
+                    <a href="#!" class="text-default">Sjaals</a>
+                  </p>
+                  <p class="mb-1">
+                    <a href="#!" class="text-default">Tassen</a>
+                  </p>
+                  <p class="mb-1">
+                    <a href="#!" class="text-default">Tops en blouses</a>
+                  </p>
+                  <p class="mb-1">
+                    <a href="#!" class="text-default">Truien en vesten</a>
+                  </p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                    Schoenen
+                </h6>
+                <p class="mb-1">
+                  <a href="#!" class="text-default">Ballerina’s en instappers</a>
+                </p>
+                <p class="mb-1">
+                  <a href="#!" class="text-default">Chelsea boots</a>
+                </p>
+                <p class="mb-1">
+                  <a href="#!" class="text-default">Laarzen</a>
+                </p>
+                <p class="mb-1">
+                  <a href="#!" class="text-default">Slippers</a>
+                </p>
+                <p class="mb-1">
+                    <a href="#!" class="text-default">Sneakers</a>
+                  </p>
+                  <p class="mb-1">
+                    <a href="#!" class="text-default">Veterschoenen</a>
+                  </p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                    Service
+                </h6>
+                <!--       Disclaimer -->
+                <p class="mb-1">
+                    <a href="#!" class="text-default">Bezorgen</a>
+                  </p>
+                  <p class="mb-1">
+                    <a href="#!" class="text-default">Retourneren</a>
+                  </p>
+                  <p class="mb-1">
+                    <a href="#!" class="text-default">Betaling</a>
+                  </p>
+                  <p class="mb-5">
+                    <a href="#!" class="text-default">Membership</a>
+                  </p>
+                  <p class="mb-1">
+                      <a href="#!" class="text-default">Algemene voorwaarden</a>
+                    </p>
+                    <p class="mb-1">
+                      <a href="#!" class="text-default">Privacy policy</a>
+                    </p>
+                    <p class="mb-1">
+                      <a href="#!" class="text-default">Disclaimer</a>
+                    </p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                    Kameleon
+                </h6>
+                <p class="mb-1">
+                    <a href="#!" class="text-default">Winkel</a>
+                  </p>
+                  <p class="mb-1">
+                    <a href="#!" class="text-default">Geschiedenis</a>
+                  </p>
+                  <p class="mb-4">
+                    <a href="#!" class="text-default">Duurzaamheid</a>
+                  </p>
+                  <p class="mb-1">
+                    <a href="#!" class="text-default">Vacatures</a>
+                  </p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-md-0 mb-4 contact">
+                <h6 class="text-uppercase fw-bold mb-4 ">Contact</h6>
+                <div class="mb-5">
+                    <a class="fas fa-home me-3 text-default">Kameleon Nijmegen</a>
+                    <a class="fas fa-home me-3 text-default">Ziekerstraat 85 /132</a>
+                    <a class="fas fa-home me-3 text-default">6511 LK Nijmegen</a>
+                </div>
+                <div>
+                    <a href="" class="text-default">
+                        <i class="bi bi-envelope me-1"></i>
+                        info@kameleonnijmegen.nl
+                    </p>
+                    <a href="" class="text-default"><i class="bi bi-telephone me-1"></i> 024 322 6373</a>
+                        <a href="" class="text-default"><i class="bi bi-whatsapp me-1"></i>06 42 11 39 09</a>
+                        <a href="" class="text-default"><i class="bi bi-instagram me-1"></i> /kameleonnijmegen</a>
+                        <a href="" class="text-default">
+                        <i class="bi bi-facebook me-1"></i> /kameleonnijmegen</a>
+
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+    </footer>
+    <!-- Scripts -->
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"
+    ></script>
+    <script src="./src/index.js"></script>
+</body>
+</html>

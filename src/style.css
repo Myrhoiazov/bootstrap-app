@@ -1,0 +1,334 @@
+
+/* --Common style-- */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul, li{
+  list-style: none;
+}
+
+:root {
+  --color-f7f7f7: #f7f7f7;
+  --color-c6c6c6: #c6c6c6;
+  --color-white: #ffffff;
+  --color-title: #4e4e4e;
+  --color-818387: #818387;
+  --color-accent: #e89e90;
+}
+
+a {
+  color: var(--color-818387);
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+a:hover {
+  color: var(--color-accent);
+}
+
+section{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+/*-- Product - checking  button --*/
+
+@media (max-width: 1199px) {
+  label{
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  label{
+    width: 40px;
+    height: 40px;
+  }
+  }
+
+/* Logo */
+
+.navbar-brand.logo{
+  letter-spacing: 0.2rem;
+}
+
+/* Header */
+
+@media (max-width: 1199px) {
+
+  nav.navbar {
+    padding: 15px 0;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0, .15);
+  }
+
+  nav .nav-link {
+    padding-left: 70px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+    nav.navbar {
+        padding: 35px 0;
+        box-shadow: none;
+    }
+  }
+
+
+nav .nav-link {
+  font-size: 13px;
+  font-weight: 400;
+  margin-right: 20px;
+}
+
+nav .nav-link.active-link,
+.navbar-brand:hover,
+.nav-link:hover,
+.nav-link:active,
+.contact-links .text-secondary:hover {
+  color: var(--color-accent);
+}
+
+/* ---Main--- */
+
+@media (max-width: 1199px) {
+  main {
+    padding-top: 70px;
+
+  }
+}
+
+@media (min-width: 1200px) {
+  main {
+    padding-top: 110px
+  }
+}
+
+
+/* ---Hero--- */
+
+.hero-wrapper {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .hero-wrapper {
+    display: block;
+    position: relative;
+  }
+
+  .hero-body {
+    position: absolute;
+    top: 42%;
+    left: 10%;
+  }
+}
+
+.hero-title {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 4px;
+}
+
+.hero-text {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 400;
+
+  margin-bottom: 5px;
+}
+
+@media (min-width: 769px) {
+  .hero-text {
+    margin-bottom: 35px;
+  }
+}
+
+.hero .btn {
+  padding: 9px 35px;
+}
+
+/* ---Slider section--- */
+
+/* Shop */
+
+.shop .col {
+  position: relative;
+}
+
+.shop .shop-content {
+  position: absolute;
+  left: 37px;
+  bottom: 38px;
+}
+
+.shop .btn {
+  padding: 7px 42px;
+}
+
+/* Products */
+
+@media (max-width: 992px) {
+  .img-thumb {
+    position: relative;
+  }
+
+  .img-thumb span {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    font-size: 8px;
+    color: var(--color-white);
+
+    padding: 5px 19px;
+    border-radius: 18px;
+
+    background-color: var(--color-accent);
+  }
+
+  .card p {
+    font-size: 12px;
+  }
+
+  .products-popular h5 {
+    font-size: 13px;
+  }
+
+  .products-popular .products-data {
+    margin-bottom: 5px;
+  }
+
+  .products-popular p {
+    font-size: 10px;
+  }
+}
+
+.products-title {
+  font-size: 25px;
+  margin-bottom: 20px;
+
+  color: var(--color-title);
+}
+
+/* Instagram */
+
+.btn-accent {
+  background-color: var(--color-accent);
+}
+
+.btn-accent:hover {
+  background-color: var(--color-818387);
+}
+
+footer p,
+a {
+  display: block;
+  font-size: 12px;
+}
+
+.contact a {
+  text-decoration: none;
+}
+
+/* --Slider-- */
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-inner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position: relative;
+  right: 0%;
+  transition: right 0.5s;
+  padding: 10px 0px;
+}
+
+.slider-item {
+  flex-basis: 33.33%;
+  flex-shrink: 0;
+  display: block;
+}
+@media (max-width: 992px) {
+  .slider-item {
+    flex-basis: 70%;
+  }
+}
+@media (max-width: 567px) {
+  .slider-item {
+    flex-basis: 100%;
+  }
+}
+
+.box {
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-image: linear-gradient(45deg, black, gray);
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+.control {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  left: 5px;
+  right: 5px;
+  top: 40%;
+}
+
+#next,
+#prev {
+  background-color: transparent;
+  font-size: 20px;
+  border: 0px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#next span,
+#prev span {
+  display: block;
+  background-color: var(--color-c6c6c6);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--color-white);
+}
+
+#next span {
+  padding-top: 5px;
+  padding-left: 4px;
+}
+
+#prev span {
+  padding-top: 5px;
+  padding-right: 3px;
+}
