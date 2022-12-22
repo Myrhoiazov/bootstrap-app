@@ -46,6 +46,7 @@ section{
 
 .goto-top{
   position: fixed;
+  z-index: 3;
   bottom: 40px;
   right: 40px;
 
@@ -204,22 +205,29 @@ nav .nav-link.active-link,
 
 /* Products */
 
+.img-thumb {
+  position: relative;
+}
+
+.img-thumb span {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-size: 8px;
+  color: var(--color-white);
+
+  padding: 5px 19px;
+  border-radius: 18px;
+
+  background-color: var(--color-accent);
+}
+
+
+
 @media (max-width: 992px) {
-  .img-thumb {
-    position: relative;
-  }
 
-  .img-thumb span {
-    position: absolute;
-    top: 12px;
-    left: 12px;
-    font-size: 8px;
-    color: var(--color-white);
-
-    padding: 5px 19px;
-    border-radius: 18px;
-
-    background-color: var(--color-accent);
+  .products .card p{
+    font-size: 11px;
   }
 
   .card p {
