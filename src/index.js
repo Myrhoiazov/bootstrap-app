@@ -44,6 +44,7 @@ $.addEventListener('DOMContentLoaded', function () {
   window.addEventListener('resize', sliderMe);
 });
 
+
 // GoTo-Top
 const btnGoTop = $.querySelector('.goto-top');
 

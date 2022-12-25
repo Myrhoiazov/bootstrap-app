@@ -43,7 +43,6 @@ section {
 }
 
 /* --Go To Top -- */
-
 .goto-top {
   position: fixed;
   z-index: 3;
@@ -79,13 +78,11 @@ section {
 }
 
 /* Logo */
-
 .navbar-brand.logo {
   letter-spacing: 0.2rem;
 }
 
 /* Header */
-
 nav {
   transition: all 0.3s ease;
 }
@@ -123,7 +120,6 @@ nav .nav-link.active-link,
 }
 
 /* ---Main--- */
-
 @media (max-width: 1199px) {
   main {
     padding-top: 70px;
@@ -137,7 +133,6 @@ nav .nav-link.active-link,
 }
 
 /* ---Hero--- */
-
 .hero-wrapper {
   display: block;
 }
@@ -183,7 +178,6 @@ nav .nav-link.active-link,
 /* ---Slider section--- */
 
 /* Shop */
-
 .shop .col {
   position: relative;
 }
@@ -199,7 +193,6 @@ nav .nav-link.active-link,
 }
 
 /* Products */
-
 .img-thumb {
   position: relative;
 }
@@ -239,7 +232,6 @@ nav .nav-link.active-link,
 }
 
 /* Instagram */
-
 .btn-accent {
   background-color: var(--color-accent);
 }
@@ -316,8 +308,8 @@ a {
   background-color: transparent;
 }
 
-#next,
-#prev {
+.next,
+.prev {
   background-color: transparent;
   pointer-events: visible;
   font-size: 20px;
@@ -328,8 +320,8 @@ button:hover {
   cursor: pointer;
 }
 
-#next span,
-#prev span {
+.next .icon-btn,
+.prev .icon-btn {
   display: block;
   background-color: var(--color-c6c6c6);
   width: 44px;
@@ -339,17 +331,27 @@ button:hover {
   transition: all 0.2s linear;
 }
 
-#next span:hover,
-#prev span:hover {
+.next .icon-btn:hover,
+.prev .icon-btn:hover {
   background-color: var(--color-title);
 }
 
-#next span {
+.next .icon-btn {
   padding-top: 5px;
   padding-left: 4px;
 }
 
-#prev span {
+.prev .icon-btn {
   padding-top: 5px;
   padding-right: 3px;
+}
+
+
+/*  ------ Product page ------ */
+
+/* select Button */
+.product-select .label{
+  width: 38px;
+  height: 38px;
+font-size: 12px;
 }
