@@ -19,8 +19,6 @@ li {
 }
 
 :root {
-  --color-f7f7f7: #f7f7f7;
-  --color-c6c6c6: #c6c6c6;
   --color-white: #ffffff;
   --color-title: #4e4e4e;
   --color-818387: #818387;
@@ -133,13 +131,9 @@ nav .nav-link.active-link,
 }
 
 /* ---Hero--- */
-.hero-wrapper {
-  display: block;
-}
 
 @media (min-width: 768px) {
   .hero-wrapper {
-    display: block;
     position: relative;
   }
 
@@ -323,7 +317,7 @@ button:hover {
 .next .icon-btn,
 .prev .icon-btn {
   display: block;
-  background-color: var(--color-c6c6c6);
+  background-color: rgb(108, 117, 125);
   width: 44px;
   height: 44px;
   border-radius: 50%;
